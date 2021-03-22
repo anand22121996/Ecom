@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+{% for product in products %}
+<div class="mt-4">
+
+<ul class="list-group">
+  <a href="{% url 'product-detail' product.id %}">
+  <li class="list-group-item">Name : {{product.name}}</li>
+  </a>
+  
+  <li class="list-group-item">Cost : ₹ {{product.cost}}</li>
+  {% comment %} <li class="list-group-item">Code : {{product.code}}</li>
+  <li class="list-group-item">In Stock : {{product.inventory_in_hand}}</li>
+  <li class="list-group-item">Description : {{product.description}}</li> {% endcomment %}
+</ul>
+
+</div>
+
+{% endfor %}
+
+
+
+
+{% endblock content %}

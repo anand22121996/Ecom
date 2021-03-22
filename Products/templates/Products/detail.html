@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<ul class="list-group">
+  <li class="list-group-item">Name : {{product.name}}</li>
+  <li class="list-group-item">Cost :  ₹ {{product.cost}}</li>
+  <li class="list-group-item">Code : {{product.code}}</li>
+  <li class="list-group-item">In Stock : {{product.inventory_in_hand}}</li>
+  <li class="list-group-item">Description : {{product.description}}</li>
+</ul>
+
+{% endblock content %}
+
+
+
